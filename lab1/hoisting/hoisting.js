@@ -7,15 +7,3 @@ function hoistVar() {
   console.log(a);
 }
 hoistVar();
-
-
-
-//Функція з "let" вивиде помилку, бо "let" не підлягає підйому
-
-
-function hoistLet() {
-  console.log(b);
-  let b= 222;
-  console.log(b);
-}
-hoistLet();
