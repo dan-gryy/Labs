@@ -11,7 +11,7 @@ console.dir({ x, y });
  
  //Функція збільшує поле об'єкту на 100
  
-function incObject(obj){
+function incObject(obj) {
     obj.n += 100
     console.dir(obj)
 }
