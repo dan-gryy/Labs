@@ -12,23 +12,26 @@ let findPhoneByName = (name) => {
             return object.phone;
         }
     }  
+    return 'Контакт не знайдено';
 }
+
 console.log(findPhoneByName("Ivan Petrenko"));
 console.log(findPhoneByName("Petro Ivanenko"));     
 console.log(findPhoneByName("Vasyl Vasylenko"));
 console.log(findPhoneByName("Stepan Stepanenko"));
 console.log(findPhoneByName("Dima Verkeeno"));
+console.log(findPhoneByName("Oleg Olegov"));
 
 
 
 //те саме, але через об'єкт
 
 
-const hash = {Ivan: "+380631234568",
-    Petro: "+380631234569",
-    Vasyl: "+380631234570",
-    Stepan: "+380631234571",
-    Dima: "+380631234567"
+const hash = {Ivan: "380631234568",
+    Petro: "380631234569",
+    Vasyl: "380631234570",
+    Stepan: "380631234571",
+    Dima: "380631234567"
 }
 const bookhash = (name) => hash[name];
 
