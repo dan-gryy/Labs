@@ -14,13 +14,9 @@ let findPhoneByName = (name) => {
     }  
     return 'Контакт не знайдено';
 }
-
-console.log(findPhoneByName("Ivan Petrenko"));
-console.log(findPhoneByName("Petro Ivanenko"));     
-console.log(findPhoneByName("Vasyl Vasylenko"));
-console.log(findPhoneByName("Stepan Stepanenko"));
-console.log(findPhoneByName("Dima Verkeeno"));
-console.log(findPhoneByName("Oleg Olegov"));
+phonebook.forEach(contact =>
+     console.log(`${contact.phone}`));
+console.log(findPhoneByName("Oleg Olegov")); //шукаємо неіснуючий контакт, щоб побачити повідомлення "Контакт не знайдено"
 
 
 
