@@ -7,4 +7,5 @@ const seq = (f) => (g) => {
     return (x) => g(f(x));
   }
 };
-console.log(seq((x) => x + 7)((x) => x * 2)(11)); // 11
+console.log(seq((x) => x + 1)((x) => x * 2)(3));
+console.log(seq((x) => x + 7)((x) => x * 2)(11));
