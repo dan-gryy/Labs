@@ -1,3 +1,5 @@
+//Функція compose, приймає довільну кількість функцій і повертає нову функцію, що застосовує їх у зворотному порядку до аргументу. Якщо одна з функцій не є функцією (наприклад, число 7 у fn3), програма викликати помилку, яку обробляє try...catch, повертаючи undefined
+
 const inc = (x) => ++x;
 const twice = (x) => x * 2;
 const cube = (x) => x ** 3;
@@ -11,7 +13,6 @@ function compose(...functions) {
     try {
       for (let fn of functions.reverse()) {
         if (typeof fn !== "function") {
-          throw new TypeError("error");
         }
         x = fn(x);
       }
